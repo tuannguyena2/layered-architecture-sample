@@ -1,0 +1,45 @@
+﻿@model WebApp.Models.TopicViewModel
+
+@{
+    ViewData["Title"] = "Topics";
+}
+
+<div class="table-responsive">
+    <table id="topic-table" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Topic</th>
+                <th>Subject</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var item in Model.Topics)
+                {
+                    foreach (var subject in item.Subjects)
+                    {
+                        <tr>
+                            <td>@item.Name</td>
+                            <td>@subject.Name</td>
+                        </tr>
+                    }
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts
+{
+    <script type="text/javascript" src="~/js/datatables.min.js"></script>
+    <script type="text/javascript" src="~/js/dataTables.rowsGroup.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#topic-table').dataTable({
+                "sDom": "ltipr",
+                'rowsGroup': [0],
+                "iDisplayLength": 100
+            });
+        });
+    </script>
+}
