@@ -1,4 +1,4 @@
-﻿using DataLayer;
+﻿using InfrastructureLayer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ServiceLayer.Abstractions.Services;

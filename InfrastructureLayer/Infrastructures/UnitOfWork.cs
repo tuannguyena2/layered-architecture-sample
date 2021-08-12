@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace DataLayer.Infrastructures
+namespace InfrastructureLayer.Infrastructures
 {
     class UnitOfWork : IUnitOfWork
     {

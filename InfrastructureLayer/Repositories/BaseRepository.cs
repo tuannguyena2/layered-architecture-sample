@@ -1,11 +1,11 @@
-﻿using DataLayer.Infrastructures;
-using DomainLayer;
+﻿using DomainLayer;
+using InfrastructureLayer.Infrastructures;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace DataLayer.Repositories
+namespace InfrastructureLayer.Repositories
 {
     abstract class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {

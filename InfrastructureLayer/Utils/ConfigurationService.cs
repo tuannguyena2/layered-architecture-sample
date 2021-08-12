@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System.IO;
 
-namespace DataLayer.Utils
+namespace InfrastructureLayer.Utils
 {
     public interface IConfigurationService
     {

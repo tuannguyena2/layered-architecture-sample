@@ -5,15 +5,15 @@ VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "advanced-layer-architecture", "advanced-layer-architecture", "{E984669A-8D3C-4827-9D3B-EC1E29A6AB7C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLayer", "DataLayer\DataLayer.csproj", "{F9073323-CE67-4D0C-BABE-5E99B7A259AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfrastructureLayer", "InfrastructureLayer\InfrastructureLayer.csproj", "{F9073323-CE67-4D0C-BABE-5E99B7A259AD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{0105FC02-CAA9-4247-9185-EF3067F640BB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceLayer", "ServiceLayer\ServiceLayer.csproj", "{0CBA404D-6813-41BB-AAF9-24735F0419E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainLayer", "DomainLayer\DomainLayer.csproj", "{D98A8D8F-2709-4983-BE2B-342FFA25EF1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainLayer", "DomainLayer\DomainLayer.csproj", "{D98A8D8F-2709-4983-BE2B-342FFA25EF1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer.Abstractions", "ServiceLayer.Abstractions\ServiceLayer.Abstractions.csproj", "{8140C543-1089-46BC-BE76-70A5439D51FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceLayer.Abstractions", "ServiceLayer.Abstractions\ServiceLayer.Abstractions.csproj", "{8140C543-1089-46BC-BE76-70A5439D51FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace DataLayer.Utils
+namespace InfrastructureLayer.Utils
 {
     public class DependencyResolver
     {

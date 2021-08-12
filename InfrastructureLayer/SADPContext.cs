@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
-namespace DataLayer
+namespace InfrastructureLayer
 {
     public class SADPContext : DbContext
     {

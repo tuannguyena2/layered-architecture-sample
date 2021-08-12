@@ -1,7 +1,7 @@
-﻿using DataLayer.Utils;
+﻿using InfrastructureLayer.Utils;
 using Microsoft.EntityFrameworkCore.Design;
 
-namespace DataLayer.Infrastructures
+namespace InfrastructureLayer.Infrastructures
 {
     class DbContextFactory : IDesignTimeDbContextFactory<SADPContext>
     {

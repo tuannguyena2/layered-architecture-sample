@@ -1,12 +1,12 @@
-﻿using DataLayer.Infrastructures;
-using DataLayer.Repositories;
-using DomainLayer;
+﻿using DomainLayer;
 using DomainLayer.Abstractions.Repositories;
+using InfrastructureLayer.Infrastructures;
+using InfrastructureLayer.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace DataLayer
+namespace InfrastructureLayer
 {
     public static class DependencyInjection
     {

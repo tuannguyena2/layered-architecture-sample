@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace DataLayer.Configurations
+namespace InfrastructureLayer.Configurations
 {
     public class TopicEntityConfiguration : IEntityTypeConfiguration<Topic>
     {
