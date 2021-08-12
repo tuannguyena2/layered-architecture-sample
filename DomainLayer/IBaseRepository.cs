@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace DomainLayer.Abstractions
+namespace DomainLayer
 {
     public interface IBaseRepository<T> where T : BaseEntity
     {

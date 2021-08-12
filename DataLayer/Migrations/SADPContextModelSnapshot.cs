@@ -83,7 +83,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 1677,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(9054),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 985, DateTimeKind.Local).AddTicks(43),
                             Department = "GSS",
                             Email = "tuanan@kms-technology.com",
                             IsDeleted = false,
@@ -93,7 +93,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 656,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(9062),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 985, DateTimeKind.Local).AddTicks(51),
                             Department = "HCDC",
                             Email = "nguyenho@kms-technology.com",
                             IsDeleted = false,
@@ -134,7 +134,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6154),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7041),
                             IsDeleted = false,
                             Name = "Introduction",
                             TopicId = 1
@@ -142,7 +142,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6162),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7049),
                             IsDeleted = false,
                             Name = "Architecture Thinking",
                             TopicId = 1
@@ -150,7 +150,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6164),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7051),
                             IsDeleted = false,
                             Name = "Modularity",
                             TopicId = 1
@@ -158,7 +158,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6166),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7052),
                             IsDeleted = false,
                             Name = "Component-Based Thinking",
                             TopicId = 1
@@ -166,7 +166,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6167),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7054),
                             IsDeleted = false,
                             Name = "Architecture Characteristics Definition",
                             TopicId = 2
@@ -174,7 +174,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6169),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7055),
                             IsDeleted = false,
                             Name = "Identifying Architecture Characteristics",
                             TopicId = 2
@@ -182,7 +182,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6170),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7056),
                             IsDeleted = false,
                             Name = "Measuring Architecture Characteristics",
                             TopicId = 2
@@ -190,7 +190,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 8,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6171),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7058),
                             IsDeleted = false,
                             Name = "Scope of Architecture Characteristics",
                             TopicId = 2
@@ -198,7 +198,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 9,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6173),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7059),
                             IsDeleted = false,
                             Name = "Fundamental Architectural Patterns",
                             TopicId = 3
@@ -206,7 +206,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 10,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6174),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7060),
                             IsDeleted = false,
                             Name = "Layered Architecture",
                             TopicId = 3
@@ -214,7 +214,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 11,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6175),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7062),
                             IsDeleted = false,
                             Name = "Pipeline Architecture",
                             TopicId = 3
@@ -222,7 +222,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 12,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6177),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7063),
                             IsDeleted = false,
                             Name = "Microkernel Architecture",
                             TopicId = 3
@@ -230,7 +230,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 13,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6178),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7065),
                             IsDeleted = false,
                             Name = "Service-Based Architecture",
                             TopicId = 3
@@ -238,7 +238,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 14,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6180),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7066),
                             IsDeleted = false,
                             Name = "Event-Driven Architecture",
                             TopicId = 3
@@ -246,7 +246,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 15,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6181),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7067),
                             IsDeleted = false,
                             Name = "Space-Based Architecture",
                             TopicId = 3
@@ -254,7 +254,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 16,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6183),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7069),
                             IsDeleted = false,
                             Name = "Orchestration-Driven Service-Oriented Architecture",
                             TopicId = 3
@@ -262,7 +262,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 17,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6184),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7070),
                             IsDeleted = false,
                             Name = "Microservices Architecture",
                             TopicId = 3
@@ -270,7 +270,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 18,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6185),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7072),
                             IsDeleted = false,
                             Name = "Architecture Decisions",
                             TopicId = 4
@@ -278,7 +278,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 19,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6187),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7073),
                             IsDeleted = false,
                             Name = "Architecture Risk Analyzing",
                             TopicId = 4
@@ -286,7 +286,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 20,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6188),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7075),
                             IsDeleted = false,
                             Name = "Architecture Diagrams and Presentations",
                             TopicId = 4
@@ -294,7 +294,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 21,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6190),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7076),
                             IsDeleted = false,
                             Name = "Development Teams Effectiveness",
                             TopicId = 4
@@ -302,7 +302,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 22,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6191),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7077),
                             IsDeleted = false,
                             Name = "Negotiation and Leadership Skills",
                             TopicId = 4
@@ -310,7 +310,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 23,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6193),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7079),
                             IsDeleted = false,
                             Name = "Project A",
                             TopicId = 5
@@ -318,7 +318,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 24,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6194),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7080),
                             IsDeleted = false,
                             Name = "Project B",
                             TopicId = 5
@@ -326,7 +326,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 25,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6195),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7082),
                             IsDeleted = false,
                             Name = "Project C",
                             TopicId = 5
@@ -334,7 +334,7 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 26,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 654, DateTimeKind.Local).AddTicks(6197),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 984, DateTimeKind.Local).AddTicks(7083),
                             IsDeleted = false,
                             Name = "Project D",
                             TopicId = 5
@@ -368,35 +368,35 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 652, DateTimeKind.Local).AddTicks(3372),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 982, DateTimeKind.Local).AddTicks(4988),
                             IsDeleted = false,
                             Name = "Software Architecture Foundations"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 653, DateTimeKind.Local).AddTicks(803),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 983, DateTimeKind.Local).AddTicks(2302),
                             IsDeleted = false,
                             Name = "Software Architecture Characteristic"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 653, DateTimeKind.Local).AddTicks(815),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 983, DateTimeKind.Local).AddTicks(2314),
                             IsDeleted = false,
                             Name = "Software Architecture Styles"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 653, DateTimeKind.Local).AddTicks(818),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 983, DateTimeKind.Local).AddTicks(2316),
                             IsDeleted = false,
                             Name = "Software Architecture Techniques and Softskills"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2021, 8, 12, 12, 8, 16, 653, DateTimeKind.Local).AddTicks(819),
+                            CreatedDate = new DateTime(2021, 8, 12, 13, 13, 32, 983, DateTimeKind.Local).AddTicks(2317),
                             IsDeleted = false,
                             Name = "Software Architecture Proposals"
                         });

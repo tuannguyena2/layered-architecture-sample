@@ -1,4 +1,4 @@
-﻿namespace ServiceLayer.DTOs
+﻿namespace ServiceLayer.Abstractions.DTOs
 {
     public class SubjectDTO
     {

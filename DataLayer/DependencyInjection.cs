@@ -1,6 +1,6 @@
 ﻿using DataLayer.Infrastructures;
 using DataLayer.Repositories;
-using DomainLayer.Abstractions;
+using DomainLayer;
 using DomainLayer.Abstractions.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;

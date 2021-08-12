@@ -8,7 +8,6 @@ namespace DataLayer.Utils
     public class DependencyResolver
     {
         public IServiceProvider ServiceProvider { get; }
-        public string CurrentDirectory { get; set; }
 
         public DependencyResolver()
         {
@@ -19,11 +18,7 @@ namespace DataLayer.Utils
 
         private void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IConfigurationService, ConfigurationService>
-                (provider => new ConfigurationService()
-                {
-                    CurrentDirectory = CurrentDirectory
-                });
+            services.AddTransient<IConfigurationService, ConfigurationService>();
 
             services.AddTransient(provider =>
             {

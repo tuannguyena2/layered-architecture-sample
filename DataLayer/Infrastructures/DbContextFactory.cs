@@ -1,6 +1,5 @@
 ﻿using DataLayer.Utils;
 using Microsoft.EntityFrameworkCore.Design;
-using System.IO;
 
 namespace DataLayer.Infrastructures
 {
@@ -10,10 +9,7 @@ namespace DataLayer.Infrastructures
 
         public SADPContext CreateDbContext(string[] args)
         {
-            var resolver = new DependencyResolver
-            {
-                CurrentDirectory = Path.Combine(Directory.GetCurrentDirectory(), "../WebApp")
-            };
+            var resolver = new DependencyResolver();
             _dataContext = resolver.ServiceProvider.GetService(typeof(SADPContext)) as SADPContext;
 
             return _dataContext;

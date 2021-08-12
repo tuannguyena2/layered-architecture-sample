@@ -1,4 +1,4 @@
-﻿using ServiceLayer.DTOs;
+﻿using ServiceLayer.Abstractions.DTOs;
 using System.Collections.Generic;
 
 namespace ServiceLayer.Abstractions.Services

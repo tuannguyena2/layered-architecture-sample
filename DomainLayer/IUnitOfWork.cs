@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace DomainLayer.Abstractions
+namespace DomainLayer
 {
     public interface IUnitOfWork
     {

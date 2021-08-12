@@ -1,8 +1,8 @@
-﻿using DomainLayer.Abstractions;
+﻿using DomainLayer;
 using DomainLayer.Abstractions.Repositories;
 using DomainLayer.Entities;
+using ServiceLayer.Abstractions.DTOs;
 using ServiceLayer.Abstractions.Services;
-using ServiceLayer.DTOs;
 using System.Collections.Generic;
 using System.Linq;
 

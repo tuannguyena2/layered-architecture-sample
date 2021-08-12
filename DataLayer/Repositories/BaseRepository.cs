@@ -1,6 +1,5 @@
 ﻿using DataLayer.Infrastructures;
 using DomainLayer;
-using DomainLayer.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;

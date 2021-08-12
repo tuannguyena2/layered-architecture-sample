@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceLayer", "ServiceLaye
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainLayer", "DomainLayer\DomainLayer.csproj", "{D98A8D8F-2709-4983-BE2B-342FFA25EF1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer.Abstractions", "ServiceLayer.Abstractions\ServiceLayer.Abstractions.csproj", "{8140C543-1089-46BC-BE76-70A5439D51FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{D98A8D8F-2709-4983-BE2B-342FFA25EF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D98A8D8F-2709-4983-BE2B-342FFA25EF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D98A8D8F-2709-4983-BE2B-342FFA25EF1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8140C543-1089-46BC-BE76-70A5439D51FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8140C543-1089-46BC-BE76-70A5439D51FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8140C543-1089-46BC-BE76-70A5439D51FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8140C543-1089-46BC-BE76-70A5439D51FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{0105FC02-CAA9-4247-9185-EF3067F640BB} = {E984669A-8D3C-4827-9D3B-EC1E29A6AB7C}
 		{0CBA404D-6813-41BB-AAF9-24735F0419E0} = {E984669A-8D3C-4827-9D3B-EC1E29A6AB7C}
 		{D98A8D8F-2709-4983-BE2B-342FFA25EF1D} = {E984669A-8D3C-4827-9D3B-EC1E29A6AB7C}
+		{8140C543-1089-46BC-BE76-70A5439D51FD} = {E984669A-8D3C-4827-9D3B-EC1E29A6AB7C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F58CA71-DE0B-44C1-8242-242A3E40A711}
