@@ -48,6 +48,18 @@ namespace ServiceLayer.Services
             return availableTopics;
         }
 
+        public IList<EmployeeDTO> ListAllEmployees()
+        {
+            var employees = _employeeRepository.GetAll();
+            return employees.Select(s => new EmployeeDTO { Id = s.Id, Name = s.Name }).ToList();
+        }
+
+        public IList<SubjectDTO> GetSubjectsByTopic(int topicId)
+        {
+            var subjects = _subjectRepository.GetWhere(x => x.TopicId == topicId);
+            return subjects.Select(s => new SubjectDTO { Id = s.Id, Name = s.Name }).ToList();
+        }
+
         public bool RegisterAssignment(int employeeId, int subjectId)
         {
             var emp = _employeeRepository.GetById(employeeId);

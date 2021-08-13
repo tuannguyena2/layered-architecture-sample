@@ -1,6 +1,6 @@
 ﻿namespace ServiceLayer.DTOs
 {
-    public class SubjectDTO : BaseDTO
+    public class EmployeeDTO : BaseDTO
     {
     }
 }

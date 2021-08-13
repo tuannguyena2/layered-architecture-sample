@@ -7,16 +7,12 @@ namespace DataLayer.Infrastructures
     class UnitOfWork : IUnitOfWork
     {
         private readonly IDbFactory _dbFactory;
-        private SADPContext _dbContext;
+        private readonly SADPContext _dbContext;
 
         public UnitOfWork(IDbFactory dbFactory)
         {
             _dbFactory = dbFactory;
-        }
-
-        protected SADPContext DatabaseContext
-        {
-            get { return _dbContext ??= _dbFactory.Get(); }
+            _dbContext = _dbFactory.Get();
         }
 
         public void Commit()
