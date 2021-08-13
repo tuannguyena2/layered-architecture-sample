@@ -1,4 +1,67 @@
-﻿@{
+﻿@model WebApp.Models.TopicRegistrationViewModel
+
+@{
     ViewData["Title"] = "Topic Registration";
 }
 <h1>@ViewData["Title"]</h1>
+
+@using (Html.BeginForm("Register", "Home", FormMethod.Post, new { id = "topicRegistration", @class = "form-horizontal" }))
+{
+    @Html.ValidationSummary(true)
+    <div class="form-group">
+        <div class="row">
+            <div class="col-md-6">
+                @Html.LabelFor(x => Model.SelectedTopic, htmlAttributes: new { @class = "control-label" })
+                @Html.DropDownListFor(x => Model.SelectedTopic, new SelectList(Model.Topics, "Value", "Text"), htmlAttributes: new { @class = "form-control", id = "topic" })
+                @Html.ValidationMessageFor(x => x.Topics, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-6">
+                @Html.LabelFor(x => Model.SelectedSubject, htmlAttributes: new { @class = "control-label" })
+                @Html.DropDownListFor(x => Model.SelectedSubject, new SelectList(Model.Subjects, "Value", "Text"), htmlAttributes: new { @class = "form-control", id = "subject" })
+                @Html.ValidationMessageFor(x => x.Subjects, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="row" style="margin-top: 15px">
+            <div class="col-md-6">
+                @Html.LabelFor(x => Model.SelectedEmployee, htmlAttributes: new { @class = "control-label" })
+                @Html.DropDownListFor(x => Model.SelectedEmployee, new SelectList(Model.Employees, "Value", "Text"), htmlAttributes: new { @class = "form-control", id = "employee" })
+                @Html.ValidationMessageFor(x => x.SelectedEmployee, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="row" style="margin-top: 15px">
+            <div class="col-md-2">
+                <input type="submit" value="Register" class="btn btn-primary" style="width: 100%" />
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            changeTopic();
+        });
+
+        function changeTopic() {
+            var selectedTopic = $('#topic').val();
+            var selectedSubject = $('#subject');
+            selectedSubject.empty();
+
+            if (selectedTopic != null && selectedTopic != '') {
+                $.getJSON('@Url.Action("GetSubjects")', { topicId: selectedTopic }, function (subjects) {
+                    if (subjects != null && !jQuery.isEmptyObject(subjects)) {
+                        var options = '';
+                        $.each(subjects, function (index, subject) {
+                            options += "<option value='" + subject.value + "'>" + subject.text + "</option>";
+                        });
+                        $('#subject').html(options);
+                    };
+                });
+            }
+        };
+
+        $('#topic').change(function () {
+            changeTopic();
+        });
+    </script>
+}

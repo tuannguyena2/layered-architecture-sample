@@ -71,7 +71,8 @@ namespace InfrastructureLayer.Migrations
                     EmployeeId = table.Column<int>(type: "int", nullable: false),
                     SubjectId = table.Column<int>(type: "int", nullable: false),
                     IsRegistered = table.Column<bool>(type: "bit", nullable: false),
-                    Id = table.Column<int>(type: "int", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LastModifiedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false)
@@ -98,8 +99,8 @@ namespace InfrastructureLayer.Migrations
                 columns: new[] { "Id", "CreatedDate", "Department", "Email", "IsDeleted", "LastModifiedDate", "Name", "WorkingProject" },
                 values: new object[,]
                 {
-                    { 1677, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(8009), "GSS", "tuanan@kms-technology.com", false, null, "Tuan Nguyen", "LeaseQuery" },
-                    { 656, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(8017), "HCDC", "nguyenho@kms-technology.com", false, null, "Nguyen Ho", "Elsevier" }
+                    { 1677, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(7683), "GSS", "tuanan@kms-technology.com", false, null, "Tuan Nguyen", "LeaseQuery" },
+                    { 656, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(7689), "HCDC", "nguyenho@kms-technology.com", false, null, "Nguyen Ho", "Elsevier" }
                 });
 
             migrationBuilder.InsertData(
@@ -107,11 +108,11 @@ namespace InfrastructureLayer.Migrations
                 columns: new[] { "Id", "CreatedDate", "IsDeleted", "LastModifiedDate", "Name" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2021, 8, 12, 20, 21, 21, 628, DateTimeKind.Local).AddTicks(2601), false, null, "Software Architecture Foundations" },
-                    { 2, new DateTime(2021, 8, 12, 20, 21, 21, 628, DateTimeKind.Local).AddTicks(9998), false, null, "Software Architecture Characteristic" },
-                    { 3, new DateTime(2021, 8, 12, 20, 21, 21, 629, DateTimeKind.Local).AddTicks(14), false, null, "Software Architecture Styles" },
-                    { 4, new DateTime(2021, 8, 12, 20, 21, 21, 629, DateTimeKind.Local).AddTicks(16), false, null, "Software Architecture Techniques and Softskills" },
-                    { 5, new DateTime(2021, 8, 12, 20, 21, 21, 629, DateTimeKind.Local).AddTicks(17), false, null, "Software Architecture Proposals" }
+                    { 1, new DateTime(2021, 8, 13, 12, 18, 26, 624, DateTimeKind.Local).AddTicks(3283), false, null, "Software Architecture Foundations" },
+                    { 2, new DateTime(2021, 8, 13, 12, 18, 26, 624, DateTimeKind.Local).AddTicks(9986), false, null, "Software Architecture Characteristic" },
+                    { 3, new DateTime(2021, 8, 13, 12, 18, 26, 624, DateTimeKind.Local).AddTicks(9998), false, null, "Software Architecture Styles" },
+                    { 4, new DateTime(2021, 8, 13, 12, 18, 26, 625, DateTimeKind.Local), false, null, "Software Architecture Techniques and Softskills" },
+                    { 5, new DateTime(2021, 8, 13, 12, 18, 26, 625, DateTimeKind.Local).AddTicks(1), false, null, "Software Architecture Proposals" }
                 });
 
             migrationBuilder.InsertData(
@@ -119,32 +120,32 @@ namespace InfrastructureLayer.Migrations
                 columns: new[] { "Id", "CreatedDate", "IsDeleted", "LastModifiedDate", "Name", "TopicId" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(4931), false, null, "Introduction", 1 },
-                    { 24, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(5010), false, null, "Project B", 5 },
-                    { 23, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(5009), false, null, "Project A", 5 },
-                    { 22, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(5007), false, null, "Negotiation and Leadership Skills", 4 },
-                    { 21, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(5006), false, null, "Development Teams Effectiveness", 4 },
-                    { 20, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(5004), false, null, "Architecture Diagrams and Presentations", 4 },
-                    { 19, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(5003), false, null, "Architecture Risk Analyzing", 4 },
-                    { 18, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(5002), false, null, "Architecture Decisions", 4 },
-                    { 17, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(5000), false, null, "Microservices Architecture", 3 },
-                    { 16, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(4999), false, null, "Orchestration-Driven Service-Oriented Architecture", 3 },
-                    { 15, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(4997), false, null, "Space-Based Architecture", 3 },
-                    { 14, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(4996), false, null, "Event-Driven Architecture", 3 },
-                    { 13, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(4994), false, null, "Service-Based Architecture", 3 },
-                    { 12, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(4993), false, null, "Microkernel Architecture", 3 },
-                    { 11, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(4992), false, null, "Pipeline Architecture", 3 },
-                    { 10, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(4990), false, null, "Layered Architecture", 3 },
-                    { 9, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(4989), false, null, "Fundamental Architectural Patterns", 3 },
-                    { 8, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(4987), false, null, "Scope of Architecture Characteristics", 2 },
-                    { 7, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(4986), false, null, "Measuring Architecture Characteristics", 2 },
-                    { 6, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(4946), false, null, "Identifying Architecture Characteristics", 2 },
-                    { 5, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(4944), false, null, "Architecture Characteristics Definition", 2 },
-                    { 4, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(4943), false, null, "Component-Based Thinking", 1 },
-                    { 3, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(4941), false, null, "Modularity", 1 },
-                    { 2, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(4939), false, null, "Architecture Thinking", 1 },
-                    { 25, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(5012), false, null, "Project C", 5 },
-                    { 26, new DateTime(2021, 8, 12, 20, 21, 21, 630, DateTimeKind.Local).AddTicks(5013), false, null, "Project D", 5 }
+                    { 1, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4751), false, null, "Introduction", 1 },
+                    { 24, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4790), false, null, "Project B", 5 },
+                    { 23, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4788), false, null, "Project A", 5 },
+                    { 22, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4787), false, null, "Negotiation and Leadership Skills", 4 },
+                    { 21, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4785), false, null, "Development Teams Effectiveness", 4 },
+                    { 20, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4784), false, null, "Architecture Diagrams and Presentations", 4 },
+                    { 19, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4783), false, null, "Architecture Risk Analyzing", 4 },
+                    { 18, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4781), false, null, "Architecture Decisions", 4 },
+                    { 17, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4780), false, null, "Microservices Architecture", 3 },
+                    { 16, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4778), false, null, "Orchestration-Driven Service-Oriented Architecture", 3 },
+                    { 15, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4777), false, null, "Space-Based Architecture", 3 },
+                    { 14, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4776), false, null, "Event-Driven Architecture", 3 },
+                    { 13, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4774), false, null, "Service-Based Architecture", 3 },
+                    { 12, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4773), false, null, "Microkernel Architecture", 3 },
+                    { 11, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4771), false, null, "Pipeline Architecture", 3 },
+                    { 10, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4770), false, null, "Layered Architecture", 3 },
+                    { 9, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4768), false, null, "Fundamental Architectural Patterns", 3 },
+                    { 8, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4767), false, null, "Scope of Architecture Characteristics", 2 },
+                    { 7, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4766), false, null, "Measuring Architecture Characteristics", 2 },
+                    { 6, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4764), false, null, "Identifying Architecture Characteristics", 2 },
+                    { 5, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4763), false, null, "Architecture Characteristics Definition", 2 },
+                    { 4, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4761), false, null, "Component-Based Thinking", 1 },
+                    { 3, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4760), false, null, "Modularity", 1 },
+                    { 2, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4758), false, null, "Architecture Thinking", 1 },
+                    { 25, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4791), false, null, "Project C", 5 },
+                    { 26, new DateTime(2021, 8, 13, 12, 18, 26, 626, DateTimeKind.Local).AddTicks(4792), false, null, "Project D", 5 }
                 });
 
             migrationBuilder.CreateIndex(
